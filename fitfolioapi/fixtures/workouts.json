@@ -1,0 +1,14 @@
+[
+    {
+        "model": "fitfolioapi.workout",
+        "pk": 1,
+        "fields":{
+            "date": "2023-08-02",
+            "exercise": 2,
+            "user": 1,
+            "reps_distance": 8,
+            "sets_time": 3,
+            "weight": 60
+        }
+    }
+]

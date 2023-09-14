@@ -1,0 +1,100 @@
+[
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 1,
+        "fields":{
+            "label": "Cardio"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 2,
+        "fields":{
+            "label": "Biceps"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 3,
+        "fields":{
+            "label": "Chest"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 4,
+        "fields":{
+            "label": "Hamstring"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 5,
+        "fields":{
+            "label": "Back"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 6,
+        "fields":{
+            "label": "Calf"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 7,
+        "fields":{
+            "label": "Triceps"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 8,
+        "fields":{
+            "label": "Lateral"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 9,
+        "fields":{
+            "label": "Forearm"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 10,
+        "fields":{
+            "label": "Glutes"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 11,
+        "fields":{
+            "label": "Quadriceps"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 12,
+        "fields":{
+            "label": "Shoulder"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 13,
+        "fields":{
+            "label": "Core"
+        }
+    },
+    {
+        "model": "fitfolioapi.exerciseType",
+        "pk": 14,
+        "fields":{
+            "label": "Deltoid"
+        }
+    }
+]
