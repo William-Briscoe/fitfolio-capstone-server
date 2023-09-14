@@ -1,0 +1,74 @@
+[
+    {
+        "model": "fitfolioapi.exercise",
+        "pk": 1,
+        "fields":{
+            "label": "Run/Walk",
+            "exercise_types": [1, 4, 6]
+        }
+    },
+    {
+        "model": "fitfolioapi.exercise",
+        "pk": 2,
+        "fields":{
+            "label": "Bench Press",
+            "exercise_types": [2, 3, 7, 14]
+        }
+    },
+    {
+        "model": "fitfolioapi.exercise",
+        "pk": 3,
+        "fields": {
+            "label": "Deadlift",
+            "exercise_types": [5, 11]
+        }
+    },
+    {
+        "model": "fitfolioapi.exercise",
+        "pk": 4,
+        "fields": {
+            "label": "Push-Ups",
+            "exercise_types": [3, 7, 13]
+        }
+    },
+    {
+        "model": "fitfolioapi.exercise",
+        "pk": 5,
+        "fields": {
+            "label": "Squats",
+            "exercise_types": [11, 10]
+        }
+    },
+    {
+        "model": "fitfolioapi.exercise",
+        "pk": 6,
+        "fields": {
+            "label": "Kettlebell Swing",
+            "exercise_types": [5, 7, 10]
+        }
+    },
+    {
+        "model": "fitfolioapi.exercise",
+        "pk": 7,
+        "fields": {
+            "label": "Pull-Ups",
+            "exercise_types": [5, 7]
+        }
+    },
+    {
+        "model": "fitfolioapi.exercise",
+        "pk": 8,
+        "fields": {
+            "label": "Kettlebell Swing",
+            "exercise_types": [5, 7, 10]
+        }
+    },
+    {
+        "model": "fitfolioapi.exercise",
+        "pk": 9,
+        "fields": {
+            "label": "Leg Press",
+            "exercise_types": [11, 10]
+        }
+    }
+]
