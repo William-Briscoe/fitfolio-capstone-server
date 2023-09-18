@@ -81,7 +81,7 @@ class WorkoutView(ViewSet):
 
 
 class ExerciseSerializer(serializers.ModelSerializer):
-    """JSON serializer for workouts"""
+    """JSON serializer for exercises"""
 
     class Meta:
         model = Exercise
