@@ -1,26 +1,20 @@
 [
     {
-        "model": "auth.user", 
+        "model": "auth.user",
         "pk": 1,
-        "fields":{
-            "username": "user1",
-            "first_name": "William",
-            "last_name": "Briscoe",
-            "email": "myman@my.guy",
-            "password": "1234",
-            "is_staff": true
-        }
-    },
-    {
-        "model": "auth.user", 
-        "pk": 2,
-        "fields":{
-            "username": "user2",
-            "first_name": "Karl",
-            "last_name": "Smithson",
-            "email": "karl@mac.com",
-            "password": "12345",
-            "is_staff": false
+        "fields": {
+            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "Carrie1945",
+            "first_name": "Carrie",
+            "last_name": "Belk",
+            "email": "me@me.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-08-28T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
         }
     }
 ]
