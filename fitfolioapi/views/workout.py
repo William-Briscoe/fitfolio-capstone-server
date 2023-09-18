@@ -43,7 +43,6 @@ class WorkoutView(ViewSet):
         exercise = Exercise.objects.get(pk=request.data["exercise"])
 
         workout = Workout.objects.create(
-            date =request.data['date'],
             reps_distance = request.data['reps_distance'],
             sets_time = request.data['sets_time'],
             weight= request.data['weight'],
