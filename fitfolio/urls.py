@@ -18,12 +18,15 @@ from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
-from fitfolioapi.views import WorkoutView
+from fitfolioapi.views import WorkoutView, ExerciseView, login_user, register_user
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'workouts', WorkoutView, 'workout')
+router.register(r'exercises', ExerciseView, 'exercise')
 
 urlpatterns = [
+    path('register', register_user),
+    path('login', login_user),
     path('admin/', admin.site.urls),
-    path('', include(router.urls))
+    path('', include(router.urls)),
 ]
