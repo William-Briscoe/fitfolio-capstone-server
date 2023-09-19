@@ -58,13 +58,15 @@ class WorkoutView(ViewSet):
     def update(self, request, pk):
         """Handle PUT requests for updating existing workouts"""
 
+        exercise = Exercise.objects.get(pk=request.data['exercise'])
+
         workout = Workout.objects.get(pk=pk)
-        workout.date = request.data['date']
+        workout.date = workout.date
         workout.reps_distance= request.data['reps_distance']
         workout.sets_time = request.data['sets_time']
         workout.weight = request.data['weight']
-        workout.exercise = Exercise.objects.get(pk=request.data['exercise'])
-        workout.user = request.auth.user
+        workout.exercise = exercise
+        workout.user = workout.user
 
         workout.save()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
