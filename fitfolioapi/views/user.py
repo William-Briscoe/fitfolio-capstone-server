@@ -7,10 +7,10 @@ from rest_framework.authtoken.models import Token
 
 class UserView(ViewSet):
     def list(self, request):
-        """Handle GET requests for single exercise
+        """Handle GET requests for single user
 
         Returns:
-            Response -- JSON serialized exercise
+            Response -- JSON serialized user
         """
 
         user_id = Token.objects.get(key=request.auth.key).user_id
