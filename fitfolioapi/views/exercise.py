@@ -2,7 +2,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from fitfolioapi.models import Exercise
+from fitfolioapi.models import Exercise, ExerciseType
 
 class ExerciseView(ViewSet):
 
@@ -71,7 +71,8 @@ class ExerciseView(ViewSet):
 
 class ExerciseSerializer(serializers.ModelSerializer):
     """JSON serializer for exercises"""
-
+    
     class Meta:
         model = Exercise
-        fields = ('id', 'label')
+        fields = ('id', 'label', 'exercise_types')
+        depth=1
