@@ -54,6 +54,14 @@ class ExerciseView(ViewSet):
         exercise = Exercise.objects.get(pk=pk)
         exercise.label = request.data['label']
 
+        # Check if exercise_types data is provided in the request
+        exercise_type_ids = request.data.get('exercise_types')
+
+        if exercise_type_ids:
+            # Use the set() method to assign exercise types to the Exercise instance
+            exercise.exercise_types.set(exercise_type_ids)
+        
+
         exercise.save()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
     
