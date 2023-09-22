@@ -89,11 +89,25 @@ class ExerciseSerializer(serializers.ModelSerializer):
         fields = ('id', 'label')
 
 
+class DateSplitField(serializers.Field):
+    """
+    Custom serializer field to split a date into year, month, and day.
+    """
+    def to_representation(self, obj):
+        return {
+            'year': obj.year,
+            'month': obj.month,
+            'day': obj.day
+        }
+
+
+
 class WorkoutSerializer(serializers.ModelSerializer):
     """JSON serializer for workouts"""
 
     exercise = ExerciseSerializer(many=False)
-    
+    datesplit = DateSplitField(source='date')
+
     class Meta:
         model = Workout
-        fields = ('id', 'date', 'reps_distance', 'sets_time', 'weight', 'exercise', 'user')
+        fields = ('id', 'date', 'datesplit', 'reps_distance', 'sets_time', 'weight', 'exercise', 'user')
